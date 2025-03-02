@@ -1,9 +1,44 @@
-<!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet"> 
     </head>
     <body>
-        <h1>New Site</h1>
+        <div class="container">
+            <div>
+                <div class="col">
+                    <h1>HOME</h1>
+                    <div class="score-screen">
+                        <!-- score -->
+                        <p class="score" id="h-score">0</p>
+                    </div>
+                    <div>
+                    <!-- for buttons -->
+                    <button onclick="h1()">+1</button>
+                    <button onclick="h2()">+2</button>
+                    <button onclick="h3()">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col">
+                    <h1>GUEST</h1>
+                    <div class="score-screen">
+                        <!-- score -->
+                        <p class="score" id="g-score">0</p>
+                    </div>
+                    <div>
+                    <!-- for buttons -->
+                    <button onclick="g1()">+1</button>
+                    <button onclick="g2()">+2</button>
+                    <button onclick="g3()">+3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="new-game">
+            <button id="new" onclick="restart()">New Game</button>
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>
